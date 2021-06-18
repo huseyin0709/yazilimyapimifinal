@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanici_girii"
+    tools:context=".hesapolustur">
+
+    <EditText
+        android:id="@+id/sifre_edittext"
+        android:layout_width="333dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="ŞİFRE"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/kaydet_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext" />
+
+    <Button
+        android:id="@+id/kaydet_button"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/buton"
+        android:onClick="kaydetbutonu"
+        android:text="KAYDET"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sifre_edittext"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="@+id/sifre_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/sifre_edittext" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/email_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hesap_olutur" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="323dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="E MAİL"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sifre_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanici_girii"
+    tools:context=".profilimiduzenle">
+
+    <Button
+        android:id="@+id/profilkaydet_button"
+        android:layout_width="149dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/buton"
+        android:onClick="profilkaydetbutonu"
+        android:text="KAYDET"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adres_edittext" />
+
+    <EditText
+        android:id="@+id/adres_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="ADRES"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/profilkaydet_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefon_edittext" />
+
+    <EditText
+        android:id="@+id/telefon_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="TELEFON"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/adres_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciadi_edittext" />
+
+    <EditText
+        android:id="@+id/kullaniciadi_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="KULLANICI ADI"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/telefon_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc_edittext" />
+
+    <EditText
+        android:id="@+id/soyad_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="SOYAD"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tc_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ad_edittext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ad_edittext"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="AD"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/soyad_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/soyad_edittext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tc_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/buton"
+        android:ems="10"
+        android:hint="TC KİMLİK NO"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciadi_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soyad_edittext" />
+</androidx.constraintlayout.widget.ConstraintLayout>

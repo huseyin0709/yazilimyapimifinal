@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanici_girii"
+    tools:context=".raporal">
+
+    <Button
+        android:id="@+id/raporal_butonu"
+        android:layout_width="185dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/beyazedit"
+        android:onClick="raporalbutonu"
+        android:text="Rapor Al"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bitistarihi_textview" />
+
+    <TextView
+        android:id="@+id/baslangictarihi_textview"
+        android:layout_width="294dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/beyazedit"
+        android:gravity="center"
+        android:text="Baslangic Tarihi"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bitistarihi_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bitistarihi_textview"
+        android:layout_width="274dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/beyazedit"
+        android:gravity="center"
+        android:text="Bitis Tarihi"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/raporal_butonu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslangictarihi_textview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

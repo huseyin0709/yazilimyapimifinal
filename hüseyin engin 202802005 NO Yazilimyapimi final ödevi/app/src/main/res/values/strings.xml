@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">yazilimyapimi</string>
+
+    <string-array name="names">
+        <item>Bugday</item>
+        <item>Arpa</item>
+        <item>Yulaf</item>
+        <item>Pamuk</item>
+        <item>Misir</item>
+    </string-array>
+    <string-array name="paralar">
+        <item>TL</item>
+        <item>ABD DOLARI</item>
+        <item>EURO</item>
+        <item>İNGİLİZ STERLİNİ</item>
+    </string-array>
+</resources>

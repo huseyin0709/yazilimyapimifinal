@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kullanici_girii"
+    tools:context=".anasayfa">
+
+
+    <ImageView
+        android:id="@+id/urunekle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="23dp"
+        android:onClick="uruneklesayfasi"
+        app:layout_constraintBottom_toTopOf="@+id/fiyat_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group_6" />
+
+    <ImageView
+        android:id="@+id/paraekle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="paraeklesayfasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/urunekle_imageview"
+        app:srcCompat="@drawable/group_7" />
+
+    <ImageView
+        android:id="@+id/fiyat_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="128dp"
+        android:onClick="fiyatlarsayfasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group_8" />
+
+    <ImageView
+        android:id="@+id/onay_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onayislemlerisayfasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group_13" />
+
+    <ImageView
+        android:id="@+id/profilimiduzenle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="profilsayfasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilimiduzenle" />
+
+    <ImageView
+        android:id="@+id/raporal_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="raporalsayfasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fiyat_imageview"
+        app:srcCompat="@drawable/raporal" />
+
+    <ImageView
+        android:id="@+id/cikis_imageview"
+        android:layout_width="173dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="cikissayfasi"
+        app:layout_constraintBottom_toBottomOf="@+id/almakistenilenler_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/almakistenilenler_imageview"
+        app:srcCompat="@drawable/cikisyeni" />
+
+    <ImageView
+        android:id="@+id/almakistenilenler_imageview"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="almakistenilenlersayfasi"
+        app:layout_constraintBottom_toTopOf="@+id/paraekle_imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/paraekle_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/profilimiduzenle_imageview"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/satnalinanlar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186383553397",
+    "project_id": "yazilimyapimiborsa",
+    "storage_bucket": "yazilimyapimiborsa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186383553397:android:c26eed342a596b93ea793c",
+        "android_client_info": {
+          "package_name": "com.huso.yazilimyapimi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186383553397-l9hj0q7cijf5kdkgbl3onm9kl10vld0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX-5ik5Dy0-nE0Xk5vbMFsDrTMhqmgCto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186383553397-l9hj0q7cijf5kdkgbl3onm9kl10vld0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
